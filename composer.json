@@ -8,11 +8,11 @@
     ],
     "require": {
     	"textalk/websocket": "1.0.*"
-    }
+    },
 	"autoload":{
 	    "psr-4": {
 	        "websocketsp\\": "src/"
 	    }
-	},
+	}
 
 }
