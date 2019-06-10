@@ -27,7 +27,14 @@ class WebSocketSPServiceProvider extends ServiceProvider
         $this->app->singleton(
             'websocketsp',
             function (){
-                return new PubClient(config('websocketsp'));
+                $config = config('websocketsp');
+                $uri = "ws://{$config['host']}:{$config['port']}";
+                $Client = new PubClient($uri,$config['options']);
+
+                if(!empty($config['password']))$Client->auth($config['password']);
+            	 
+            	 
+                return  $Client;
             }
         );
     }
