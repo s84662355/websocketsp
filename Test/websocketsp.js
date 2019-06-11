@@ -196,7 +196,8 @@ $w.getMesgCallBack(function($content,$message_id){
 });
 
 $w.begin();
-*/
+
+
 
 $w = new WebSocketSP("ws://47.112.128.19:8083");
 
@@ -204,6 +205,8 @@ $w.sub("111111").getMesgCallBack(function($content,$message_id){
     alert($content);
     alert($message_id);
 }).begin();
+*/
+
 
 
 
