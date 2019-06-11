@@ -22,9 +22,16 @@ $Client = new PubClient($uri,$config['options']);
 
 $Client->auth($config['password']);
 
-$data = [
-    'ajsdks',
-    'adjio对我 i 哦大家'
+$extra = [
+
+    'src_type'=>1,
+    'src_id'  => '819128cjhiuhw',
+    'dest_type'=>2,
+    'dest_id'=> 'sdjoiwjo',
+    'src_name' => '一一培训',
+    'src_type_name' => '机构',
+    'dest_name' => '中心小学',
+    'dest_type_name' => '学校',
 ];
 
-$Client->publish(json_encode($data),"111111",1,"skvmdlvmdkflvd",3,"111111");
+$Client->publish("hello world",$extra);

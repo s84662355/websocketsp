@@ -49,22 +49,29 @@ class PubClient{
     }
 
 
-    public function   publish(string $data,$src_type,$src_id,$dest_type,$dest_id)
-    {
+    /*
+     *      $extra = [
 
+            'src_type'
+            'src_id'
+            'dest_type'
+            'dest_id'
+            'src_type_name'
+            'dest_name'
+        ];
+     *
+     * */
+
+    public function  publish(string $data,$extra)
+    {
         try{
+            $extra['sent_at'] = date('Y-m-d h:i:s');
 
             $data = [
                 'action' => 'pub',
                 'data' => base64_encode($data),
-                'channel' => $dest_id,
-                'extra' => [
-                    'src_type' =>$src_type,
-                    'src_id'   =>$src_id,
-                    'dest_type'=>$dest_type,
-                    'dest_id'  =>$dest_id,
-                    'sent_at' => time(),
-                ],
+                'channel' => $extra['dest_id'],
+                'extra' => $extra,
             ];
             $this->getClient()-> send(json_encode($data));
             if(empty($res['code']) || $res['code'] == 500) return false;
@@ -73,8 +80,6 @@ class PubClient{
             return false;
         }
 
-
     }
-
 
 }
