@@ -129,16 +129,19 @@
         sub($channel)
         {
             this._channel.push($channel);
+            return this;
         }
 
         subCallBack($callback)
         {
             this._sub_call_back = $callback;
+            return this;
         }
 
         getMesgCallBack($callback)
         {
             this._msg_call_back = $callback;
+            return this;
         }
 
 
@@ -174,6 +177,8 @@
 
             };
 
+            return this;
+
         }
 
     }
@@ -192,6 +197,14 @@ $w.getMesgCallBack(function($content,$message_id){
 
 $w.begin();
 */
+
+$w = new WebSocketSP("ws://47.112.128.19:8083");
+
+$w.sub("111111").getMesgCallBack(function($content,$message_id){
+    alert($content);
+    alert($message_id);
+}).begin();
+
 
 
 </script>
