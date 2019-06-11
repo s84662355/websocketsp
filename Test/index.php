@@ -22,4 +22,9 @@ $Client = new PubClient($uri,$config['options']);
 
 $Client->auth($config['password']);
 
-$Client->publish("dssksgsklgskl放到了快三个酸辣粉高考顺利sdmfldskfs".time(),"111111",1,"skvmdlvmdkflvd",3,"111111");
+$data = [
+    'ajsdks',
+    'adjio对我 i 哦大家'
+];
+
+$Client->publish(json_encode($data),"111111",1,"skvmdlvmdkflvd",3,"111111");
