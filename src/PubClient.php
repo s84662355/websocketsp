@@ -49,7 +49,7 @@ class PubClient{
     }
 
 
-    public function   publish(string $data,$channel,$src_type,$src_id,$dest_type,$dest_id)
+    public function   publish(string $data,$src_type,$src_id,$dest_type,$dest_id)
     {
 
         try{
@@ -57,7 +57,7 @@ class PubClient{
             $data = [
                 'action' => 'pub',
                 'data' => base64_encode($data),
-                'channel' => $channel,
+                'channel' => $dest_id,
                 'extra' => [
                     'src_type' =>$src_type,
                     'src_id'   =>$src_id,
