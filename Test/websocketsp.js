@@ -170,7 +170,7 @@
                     var b = new Base64();
                     var $content = $data['data']['content'];
                     $content =  b.decode($content);
-                    that._msg_call_back($content,$data['data']['message_id']);
+                    that._msg_call_back($content,$data['data']['message_id'],$data['data']['dest_id'],$data['data']['dest_type']);
                 }
 
 
@@ -190,7 +190,7 @@ $w = new WebSocketSP("ws://47.112.128.19:8083");
 
 $w.sub("111111");
 
-$w.getMesgCallBack(function($content,$message_id){
+$w.getMesgCallBack(function($content,$message_id,$dest_id,dest_type){
     alert($content);
     alert($message_id);
 });
