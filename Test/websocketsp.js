@@ -123,9 +123,9 @@
         }
 
 
-        sub($id,$city_id)
+        sub($dest_id,$city_id)
         {
-            this._channel.push($id+$city_id);
+            this._channel.push($dest_id+$city_id);
             return this;
         }
 
@@ -185,7 +185,7 @@
     /*
 $w = new WebSocketSP("ws://47.112.128.19:8083");
 
-$w.sub("111111");
+$w.sub($dest_id,$city_id);
 
 $w.getMesgCallBack(function($content,$extra){
     alert($content);
@@ -198,7 +198,7 @@ $w.begin();
 
 $w = new WebSocketSP("ws://47.112.128.19:8083");
 
-$w.sub("111111").getMesgCallBack(function($content,$extra){
+$w.sub($dest_id,$city_id).getMesgCallBack(function($content,$extra){
     alert($content);
 
 }).begin();
