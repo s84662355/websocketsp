@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f1235ca-5fae-4838-b772-cda04b879a1c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Test/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/websocketsp.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/websocketsp.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +18,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PubClient.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
+            <state relative-caret-position="107">
               <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
             </state>
           </provider>
@@ -37,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+            <state relative-caret-position="146">
+              <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -46,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/websocketsp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="192" column="67" selection-start-line="192" selection-start-column="67" selection-end-line="192" selection-end-column="67" />
+            <state relative-caret-position="304">
+              <caret line="202" column="3" lean-forward="true" selection-start-line="202" selection-start-column="3" selection-end-line="202" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -99,10 +98,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="433" />
-    <option name="y" value="23" />
-    <option name="width" value="1247" />
-    <option name="height" value="787" />
+    <option name="x" value="199" />
+    <option name="y" value="-912" />
+    <option name="width" value="1084" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -164,18 +163,18 @@
       <workItem from="1560161001615" duration="2302000" />
       <workItem from="1560174612712" duration="377000" />
       <workItem from="1560219690998" duration="10362000" />
-      <workItem from="1560329360871" duration="90000" />
+      <workItem from="1560329360871" duration="2671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13131000" />
+    <option name="totallyTimeSpent" value="15712000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="433" y="23" width="1247" height="787" extended-state="0" />
+    <frame x="199" y="-912" width="1084" height="788" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2580913" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29846448" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -188,7 +187,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28633094" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28591955" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -207,13 +206,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PubClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WebSocketSPServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -228,17 +220,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/PubClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+        <state relative-caret-position="146">
+          <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/websocketsp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="192" column="67" selection-start-line="192" selection-start-column="67" selection-end-line="192" selection-end-column="67" />
+        <state relative-caret-position="304">
+          <caret line="202" column="3" lean-forward="true" selection-start-line="202" selection-start-column="3" selection-end-line="202" selection-end-column="3" />
         </state>
       </provider>
     </entry>

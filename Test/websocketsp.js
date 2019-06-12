@@ -117,14 +117,11 @@
 
 
     class WebSocketSP {
-
-
-
         constructor($uri) {
             this._uri = $uri;
             this._channel = [];
-
         }
+
 
         sub($channel)
         {
@@ -170,7 +167,7 @@
                     var b = new Base64();
                     var $content = $data['data']['content'];
                     $content =  b.decode($content);
-                    that._msg_call_back($content,$data['data']['message_id'],$data['data']['dest_id'],$data['data']['dest_type']);
+                    that._msg_call_back($content,$data['data']['extra']);
                 }
 
 
@@ -190,9 +187,9 @@ $w = new WebSocketSP("ws://47.112.128.19:8083");
 
 $w.sub("111111");
 
-$w.getMesgCallBack(function($content,$message_id,$dest_id,dest_type){
+$w.getMesgCallBack(function($content,$extra){
     alert($content);
-    alert($message_id);
+
 });
 
 $w.begin();
@@ -201,9 +198,9 @@ $w.begin();
 
 $w = new WebSocketSP("ws://47.112.128.19:8083");
 
-$w.sub("111111").getMesgCallBack(function($content,$message_id){
+$w.sub("111111").getMesgCallBack(function($content,$extra){
     alert($content);
-    alert($message_id);
+
 }).begin();
 */
 
