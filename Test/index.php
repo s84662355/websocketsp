@@ -32,7 +32,8 @@ $extra = [
     'src_type_name' => '机构',
     'dest_name' => '中心小学',
     'dest_type_name' => '学校11',
-    'city_id' => 440100000000,
+   // 'city_id' => '440100000000',
+    'city_id' => '440300000000'
 ];
 
 

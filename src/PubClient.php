@@ -70,7 +70,7 @@ class PubClient{
             $data = [
                 'action' => 'pub',
                 'data' => base64_encode($data),
-                'channel' => $extra['dest_id'],
+                'channel' => $extra['dest_id'].$extra['city_id'],
                 'extra' => $extra,
             ];
             $this->getClient()-> send(json_encode($data));

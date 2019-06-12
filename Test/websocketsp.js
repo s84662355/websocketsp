@@ -123,9 +123,9 @@
         }
 
 
-        sub($channel)
+        sub($id,$city_id)
         {
-            this._channel.push($channel);
+            this._channel.push($id+$city_id);
             return this;
         }
 
