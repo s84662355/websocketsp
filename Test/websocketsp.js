@@ -141,8 +141,6 @@
             return this;
         }
 
-
-
         begin()
         {
             var ws = new WebSocket(this._uri);
