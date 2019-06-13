@@ -27,11 +27,21 @@ composer require chenjiahao/websocketsp
     $Client=app('websocketsp');
     
     
-  $data = [
-      'ajsdks',
-      'adjio对我 i 哦大家'
-  ];
+$extra = [
 
-  $Client->publish(json_encode($data),"111111",1,"skvmdlvmdkflvd",3,"111111");
+    'src_type'=>1,
+    'src_id'  => '819wewew128cjhiuhw',
+    'dest_type'=>2,
+    'dest_id'=> 'sdjo32423432423o',
+    'src_name' => '一一培训',
+    'src_type_name' => '机构',
+    'dest_name' => '中心小学',
+    'dest_type_name' => '学校11',
+    'city_id' => '440100000000',
+   /// 'city_id' => '440300000000',
+];
 
+
+for ($i=0;$i<10;$i++)
+$Client->publish("hello world",$extra);
 
