@@ -27,6 +27,7 @@ composer require chenjiahao/websocketsp
     $Client=app('websocketsp');
     
     
+
 $extra = [
 
     'src_type'=>1,
@@ -37,9 +38,12 @@ $extra = [
     'src_type_name' => '机构',
     'dest_name' => '中心小学',
     'dest_type_name' => '学校11',
+    'level' => 3,
+    'type'  => 2,
     'city_id' => '440100000000',
    /// 'city_id' => '440300000000',
 ];
+
 
 
 for ($i=0;$i<10;$i++)
