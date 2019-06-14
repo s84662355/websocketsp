@@ -40,4 +40,4 @@ $extra = [
 
 
 for ($i=0;$i<10;$i++)
-$Client->publish("hello world",$extra);
+var_dump($Client->publish("hello world",$extra))  ;

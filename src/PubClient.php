@@ -74,9 +74,12 @@ class PubClient{
                 'extra' => $extra,
             ];
             $this->getClient()-> send(json_encode($data));
+            $res = $this->getClient()->receive();
+            $res = json_decode($res,true);
             if(empty($res['code']) || $res['code'] == 500) return false;
             return true;
         }catch (\Exception $exception){
+
             return false;
         }
 
