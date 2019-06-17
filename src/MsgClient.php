@@ -32,7 +32,7 @@ class MsgClient
 
     public function search($conds = [])
     {
-        $response = $this->Client()->request("GET",'/', [
+        $response = $this->Client()->request("GET",'', [
             'query' => $conds
         ]);
 
@@ -49,6 +49,7 @@ class MsgClient
     {
         return $this->request($message_id,$city_id);
     }
+
 
     public function read($message_id,$city_id)
     {

@@ -48,6 +48,8 @@ for ($i=0;$i<10;$i++)
 $c = new MsgClient($config["web_host"]);
 
 
+
+
 /*
  *
 array(2) {
@@ -62,7 +64,7 @@ array(2) {
   }
 }
  * */
-var_dump($c->read("aa4cd53298494094947bf5bb1add29e9",'440100000000')) ;
+//var_dump($c->read("aa4cd53298494094947bf5bb1add29e9",'440100000000')) ;
 /*
  * array(2) {
     ["code"]=>
@@ -112,8 +114,10 @@ var_dump($c->read("aa4cd53298494094947bf5bb1add29e9",'440100000000')) ;
   }
 }
  * */
-var_dump($c->get("aa4cd53298494094947bf5bb1add29e9",'440100000000')) ;
-var_dump($c->delete("aa4cd53298494094947bf5bb1add29e9",'440100000000')) ;
+//var_dump($c->get("aa4cd53298494094947bf5bb1add29e9",'440100000000')) ;
+///var_dump($c->delete("aa4cd53298494094947bf5bb1add29e9",'440100000000')) ;
+///var_dump($c->delete("aa4cd53298494094947bf5bb1add29e9",'440100000000')) ;
+///var_dump($c->delete("aa4cd53298494094947bf5bb1add29e9",'440100000000')) ;
 
 /*
 array(2) {
@@ -128,3 +132,13 @@ array(2) {
   }
 }
 */
+
+var_dump($c->search([
+    'dest_id' => 'sdjo32423432423o',
+    'city_id' => '440100000000'
+]));
+
+
+
+
+
