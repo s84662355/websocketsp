@@ -12,5 +12,7 @@ return [
     'port' => '8083',
     'password' => '123456',
     'options' => [],
+
+    'web_host' => 'http://msg-center.cieo.com.cn/api/messages/',
 ];
 

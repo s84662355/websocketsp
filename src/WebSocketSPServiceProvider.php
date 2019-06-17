@@ -37,6 +37,15 @@ class WebSocketSPServiceProvider extends ServiceProvider
                 return  $Client;
             }
         );
+
+        $this->app->singleton(
+            'msg_client',
+            function (){
+                $config = config('websocketsp');
+                return new MsgClient($config["web_host"]);
+            }
+        );
+
     }
 
     /**
